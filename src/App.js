@@ -7,13 +7,11 @@ function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
   const [order, setOrder] = useState("market_cap_desc")
-  console.log(coins);
 
   useEffect(() => {
     axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=${order}&per_page=100&page=1`)
       .then((res) => {
         setCoins(res.data);
-        console.log(res.data);
       })
       .catch((error) => console.log(error))
 
