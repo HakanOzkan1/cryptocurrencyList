@@ -43,6 +43,8 @@
     #4801ff 100%
   ); */
   background-color: white;
+  color:#3A3B3C;
+  font-weight: bold;
   
 }
 .coin-input::placeholder{
